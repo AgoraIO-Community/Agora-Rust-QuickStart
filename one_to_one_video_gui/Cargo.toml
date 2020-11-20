@@ -1,0 +1,15 @@
+[package]
+name = "demo_gui_qt"
+version = "0.1.0"
+authors = ["DongYifan <dongyifan@outlook.com>", "Yiqing Huang <huangyiqing@agora.io>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+agorartc-sys = "*"
+qt_widgets = "*"
+qt_gui = "0.5.0"
+qt_core = "0.5.0"
+qt_ui_tools = "0.5.0"
+cpp_core = "0.6.0"
