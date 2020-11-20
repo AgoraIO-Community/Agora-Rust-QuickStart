@@ -1,3 +1,11 @@
+//
+//  one_to_one_video_terminal
+//  Agora-Rust-Video-Tutorial
+//
+//  Created by Yiqing Huang on 2020/11/20.
+//  Copyright © 2020 Agora. All rights reserved.
+//
+
 use std::ops::Add;
 use std::env;
 use walkdir::WalkDir;

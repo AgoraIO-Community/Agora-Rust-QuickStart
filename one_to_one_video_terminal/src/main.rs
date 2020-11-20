@@ -1,3 +1,11 @@
+//
+//  one_to_one_video_terminal
+//  Agora-Rust-Video-Tutorial
+//
+//  Created by Yifan Dong on 2020/11/20.
+//  Copyright © 2020 Agora. All rights reserved.
+//
+
 #![allow(non_upper_case_globals)]
 
 use std::io;

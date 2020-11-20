@@ -1,3 +1,11 @@
+//
+//  one_to_one_video_gui
+//  Agora-Rust-Video-Tutorial
+//
+//  Created by Yiqing Huang on 2020/11/20.
+//  Copyright © 2020 Agora. All rights reserved.
+//
+
 #![allow(non_upper_case_globals)]
 #![allow(non_snake_case)]
 #![allow(non_camel_case_types)]
