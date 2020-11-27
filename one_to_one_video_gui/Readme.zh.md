@@ -60,6 +60,17 @@
    $ install_name_tool -change @rpath/libQt5Core.5.dylib ~/Qt/5.15.1/clang_64/lib/QtCore.framework/QtCore demo_gui_qt
    ```
 
+   若依旧显示`Reason: image not found`，请将`target/debug/deps`中的`demo_gui_qt`也按照上述办法替换路径。
+
+   例如：
+
+   ```bash
+   $ cd target/debug/deps
+   $ install_name_tool -change @rpath/libQt5Gui.5.dylib ~/Qt/5.15.1/clang_64/lib/QtGui.framework/QtGui demo_gui_qt
+   $ install_name_tool -change @rpath/libQt5Widgets.5.dylib ~/Qt/5.15.1/clang_64/lib/QtWidgets.framework/QtWidgets demo_gui_qt
+   $ install_name_tool -change @rpath/libQt5Core.5.dylib ~/Qt/5.15.1/clang_64/lib/QtCore.framework/QtCore demo_gui_qt
+   ```
+
 5. 运行示例。
 
    Windows用户需要在**VS command prompt**中运行以下命令。

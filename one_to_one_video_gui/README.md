@@ -60,6 +60,17 @@ If you are not familiar with Rust, please visit [Rust Programming Language](http
    $ install_name_tool -change @rpath/libQt5Core.5.dylib ~/Qt/5.15.1/clang_64/lib/QtCore.framework/QtCore demo_gui_qt
    ```
 
+   If you follow the instructions above but it still tells `Reason: image not found`, please change the path of `demo_gui_qt` in `target/debug/deps` using the same method.
+
+   For example:
+
+   ```bash
+   $ cd target/debug/deps
+   $ install_name_tool -change @rpath/libQt5Gui.5.dylib ~/Qt/5.15.1/clang_64/lib/QtGui.framework/QtGui demo_gui_qt
+   $ install_name_tool -change @rpath/libQt5Widgets.5.dylib ~/Qt/5.15.1/clang_64/lib/QtWidgets.framework/QtWidgets demo_gui_qt
+   $ install_name_tool -change @rpath/libQt5Core.5.dylib ~/Qt/5.15.1/clang_64/lib/QtCore.framework/QtCore demo_gui_qt
+   ```
+
 5. Run demo.
 
    For Windows users, please run the following instruction in the **VS command prompt**.
